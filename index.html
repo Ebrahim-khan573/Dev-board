@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-300 m-0">
+
+    <header class="mb-4 pt-5">
+    
+    <div class="flex justify-between max-w-screen-2xl mx-auto p-6 rounded-2xl bg-white">
+        <div class="flex items-center">
+            <img src="./assets/logo.png" alt="">
+            <h1 class="text-[#00303C] text-3xl">Dev<Span class="font-bold">Board</Span></h1>
+        </div>
+        <div class="flex items-center gap-14">
+            <div class="flex items-center gap-3 bg-gray-200 p-3 rounded-full">
+                <img src="./assets/checkbox.png" alt="">
+                <h2 class="text-black text-2xl font-bold">23</h2>
+            </div>
+            <img src="./assets/theme-btn.png" alt="">
+        </div>
+    </div>
+    </header>
+
+    <main class="max-w-screen-2xl mx-auto flex justify-center gap-6 pb-3 ">
+        <section class="max-w-6xl  bg-white p-6 rounded-xl ">
+            <!-- container div -->
+            <div class="flex items-center gap-6 max-w-6xl ">
+                <!-- task assignment section -->
+                <div class="flex items-center gap-5 bg-slate-100 py-3 px-5 rounded-xl w-[263px] h-[128px] justify-center">
+                    <img src="./assets/checkbox.png" alt="">
+                    <div>
+                        <p class="text-lg text-[#00303C] font-semibold">Task Assigned </p>
+                        <h1 class="text-black text-2xl font-bold">05</h1>
+                    </div>
+                </div>
+                <!-- discover something section -->
+                
+                    <div class="bg-blue-500 flex items-center gap-5  w-[500px] h-[128px] rounded-xl pl-3 ">
+                        <img src="./assets/board.png " alt="">
+                        <h3 class="text-2xl font-normal text-white ">Discover Something <br> New Today!</h3>
+                    </div> 
+              
+                <!-- calender section -->
+                <div class="flex items-center gap-5 bg-slate-100 py-3 px-5 rounded-xl w-[263px] h-[128px] justify-center ">
+                    <img src="./assets/calender.png" alt="">
+                    <h3 class="text-2xl">Wed, 
+                        <br>
+                     <span class="font-bold">Jul 28 2025</span></h3>
+                </div>
+            </div> 
+
+            <!-- card section -->
+
+            <div class="mt-5 grid grid-cols-3 gap-5">
+                <!-- card -1 -->
+                <div class="bg-gray-100 p-5 rounded-xl w-[341px] h-[280px] ">
+                    <p class="text-[#00303C] text-lg bg-white px-2 py-1 rounded-md w-[114px] text-center mb-4 ">ShopEase</p>
+                    <h2 class="text-[#00303C] text-2xl font-medium mb-4">Fix Mobile Button Issue</h2>
+                    <div>
+                        <p class="text-[#8d8d8d] bg-white p-2 rounded-md mb-4">Debug using Chrome DevTools, check for overlapping elements, </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="gap-y-2">
+                            <p class="text-base font-semibold text-gray-400 ">Deadline</p>
+                            <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                    </div>
+                </div>
+
+
+                <!-- card -2 -->
+                <div class="bg-gray-100 p-5 rounded-xl w-[341px] h-[280px] ">
+                    <p class="text-[#00303C] text-lg bg-white px-2 py-1 rounded-md w-[114px] text-center mb-4 ">CloudSync</p>
+                    <h2 class="text-[#00303C] text-2xl font-medium mb-4">Add Dark Mode</h2>
+                    <div>
+                        <p class="text-[#8d8d8d] bg-white p-2 rounded-md mb-4">Store the user's preference in localStorage, update CSS   </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="gap-y-2">
+                            <p class="text-base font-semibold text-gray-400 ">Deadline</p>
+                            <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                    </div>
+                </div>
+
+
+
+                <!-- card -3 -->
+                <div class="bg-gray-100 p-5 rounded-xl w-[341px] h-[280px] ">
+                    <p class="text-[#00303C] text-lg bg-white px-2 py-1 rounded-md w-[114px] text-center mb-4 ">SwiftPay</p>
+                    <h2 class="text-[#00303C] text-2xl font-medium mb-4">Optimize  Home page </h2>
+                    <div>
+                        <p class="text-[#8d8d8d] bg-white p-2 rounded-md mb-4">Debug using Chrome DevTools, check for overlapping  </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="gap-y-2">
+                            <p class="text-base font-semibold text-gray-400 ">Deadline</p>
+                            <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                    </div>
+                </div>
+                <!-- card -4 -->
+                <div class="bg-gray-100 p-5 rounded-xl w-[341px] h-[280px] ">
+                    <p class="text-[#00303C] text-lg bg-white px-2 py-1 rounded-md w-[114px] text-center mb-4 ">Meta</p>
+                    <h2 class="text-[#00303C] text-2xl font-medium mb-4">Add new emoji 🤲</h2>
+                    <div>
+                        <p class="text-[#8d8d8d] bg-white p-2 rounded-md mb-4">Debug using Chrome DevTools, check for overlapping elements, </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="gap-y-2">
+                            <p class="text-base font-semibold text-gray-400 ">Deadline</p>
+                            <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                    </div>
+                </div>
+                <!-- card -5 -->
+                <div class="bg-gray-100 p-5 rounded-xl w-[341px] h-[280px] ">
+                    <p class="text-[#00303C] text-lg bg-white px-2 py-1 rounded-md w-[124px] text-center mb-4 ">Google LLC</p>
+                    <h2 class="text-[#00303C] text-2xl font-medium mb-4">Integrate OpenAI API </h2>
+                    <div>
+                        <p class="text-[#8d8d8d] bg-white p-2 rounded-md mb-4">Debug using Chrome DevTools, check for overlapping elements, </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="gap-y-2">
+                            <p class="text-base font-semibold text-gray-400 ">Deadline</p>
+                            <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                    </div>
+                </div>
+                <!-- card -6 -->
+                <div class="bg-gray-100 p-5 rounded-xl w-[341px] h-[280px] ">
+                    <p class="text-[#00303C] text-lg bg-white px-2 py-1 rounded-md w-[114px] text-center mb-4 ">Glassdoar</p>
+                    <h2 class="text-[#00303C] text-2xl font-medium mb-4">Improve Job searching </h2>
+                    <div>
+                        <p class="text-[#8d8d8d] bg-white p-2 rounded-md mb-4">Debug using Chrome DevTools, check for overlapping elements, </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="gap-y-2">
+                            <p class="text-base font-semibold text-gray-400 ">Deadline</p>
+                            <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+                        
+        </section>
+        <!-- activity section -->
+        <section class="w-[380px] h-[800px] bg-white rounded-xl pt-4 text-center">
+            <div class="flex gap-3 justify-center items-center">
+                <img src="./assets/activity.png" alt="">
+                <h1 class="text-xl font-normal">Activity Log</h1>
+            </div>
+            <button class="bg-blue-600 text-white py-2 px-4 mt-4 rounded-lg">Clear History</button>
+            
+        </section>
+    </main>
+</body>
+
+</html>
