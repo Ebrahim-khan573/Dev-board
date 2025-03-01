@@ -23,7 +23,7 @@
         <div class="flex items-center gap-14">
             <div class="flex items-center gap-3 bg-gray-200 p-3 rounded-full">
                 <img src="./assets/checkbox.png" alt="">
-                <h2 class="text-black text-2xl font-bold">23</h2>
+                <h2 id="assigned-value" class="text-black text-2xl font-bold">23</h2>
             </div>
             <img src="./assets/theme-btn.png" alt="">
         </div>
@@ -39,12 +39,12 @@
                     <img src="./assets/checkbox.png" alt="">
                     <div>
                         <p class="text-lg text-[#00303C] font-semibold">Task Assigned </p>
-                        <h1 class="text-black text-2xl font-bold">05</h1>
+                        <h1 id="task-assigned-amount" class="text-black text-2xl font-bold">6</h1>
                     </div>
                 </div>
                 <!-- discover something section -->
                 
-                    <div class="bg-blue-500 flex items-center gap-5  w-[500px] h-[128px] rounded-xl pl-3 ">
+                    <div class="bg-blue-500 flex items-center gap-5  w-[500px] h-[128px] rounded-xl pl-3 cursor-pointer">
                         <img src="./assets/board.png " alt="">
                         <h3 class="text-2xl font-normal text-white ">Discover Something <br> New Today!</h3>
                     </div> 
@@ -73,7 +73,7 @@
                             <p class="text-base font-semibold text-gray-400 ">Deadline</p>
                             <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal Complete-button ">Completed</button>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
                             <p class="text-base font-semibold text-gray-400 ">Deadline</p>
                             <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                        <button  class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal Complete-button">Completed</button>
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@
                             <p class="text-base font-semibold text-gray-400 ">Deadline</p>
                             <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal Complete-button">Completed</button>
                     </div>
                 </div>
                 <!-- card -4 -->
@@ -123,7 +123,7 @@
                             <p class="text-base font-semibold text-gray-400 ">Deadline</p>
                             <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl font-normal Complete-button">Completed</button>
                     </div>
                 </div>
                 <!-- card -5 -->
@@ -138,7 +138,7 @@
                             <p class="text-base font-semibold text-gray-400 ">Deadline</p>
                             <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal Complete-button">Completed</button>
                     </div>
                 </div>
                 <!-- card -6 -->
@@ -153,7 +153,7 @@
                             <p class="text-base font-semibold text-gray-400 ">Deadline</p>
                             <p class="text-[#00303C] text-lg font-medium">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal">Completed</button>
+                        <button id="complete-btn-6" class="bg-[#3752FD] text-white p-3 rounded-xl  font-normal Complete-button">Completed</button>
                     </div>
                 </div>
                 
@@ -172,6 +172,10 @@
             
         </section>
     </main>
+
+
+    <script src="./script/script.js"></script>
+    <script src="./script/convert.js"></script>
 </body>
 
 </html>
