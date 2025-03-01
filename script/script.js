@@ -1,4 +1,7 @@
 
+document.getElementById('discover-btn').addEventListener('click', function(){
+    window.location.href = "./Discover.html"
+})
 
 const completeButtons = document.querySelectorAll(".Complete-button")
 
@@ -14,6 +17,10 @@ for(const completeButton of completeButtons){
         const assignValue = getConvertToNumber('assigned-value')
         document.getElementById('assigned-value').innerText = assignValue +1;
         
+        const p = document.createElement('p');
+        p.innerText = `
+        
+        `
         
        
     })

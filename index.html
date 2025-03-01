@@ -25,7 +25,7 @@
                 <img src="./assets/checkbox.png" alt="">
                 <h2 id="assigned-value" class="text-black text-2xl font-bold">23</h2>
             </div>
-            <img src="./assets/theme-btn.png" alt="">
+            <img class="cursor-pointer" onclick="changeBgBackground()" src="./assets/theme-btn.png" alt="">
         </div>
     </div>
     </header>
@@ -46,7 +46,7 @@
                 
                     <div class="bg-blue-500 flex items-center gap-5  w-[500px] h-[128px] rounded-xl pl-3 cursor-pointer">
                         <img src="./assets/board.png " alt="">
-                        <h3 class="text-2xl font-normal text-white ">Discover Something <br> New Today!</h3>
+                        <h3 id="discover-btn" class="text-2xl font-normal text-white ">Discover Something <br> New Today!</h3>
                     </div> 
               
                 <!-- calender section -->
@@ -176,6 +176,7 @@
 
     <script src="./script/script.js"></script>
     <script src="./script/convert.js"></script>
+    <script src="./script/changeBg.js"></script>
 </body>
 
 </html>
