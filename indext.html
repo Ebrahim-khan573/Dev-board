@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+        <header class="flex justify-center items-center">
+            <img class="w-36" src="./payoo.png" alt="">
+        </header>
+        <!-- login section -->
+        <div class=" ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Number</label>
+                            <input id="account-number" value="01681389548" type="number" class="input" placeholder="Account number" required/>
+                            <label class="fieldset-label">4 Digit Pin</label>
+                            <input id="pin" type="text" class="input" placeholder="Pin" required />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="btn-login" class="btn btn-neutral mt-4">Login</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <p id="name">Programming Hero</p>
+
+
+<script src="./script/login.js"></script>
+<script>
+const nameOfOrganization = document.getElementById("name").value;
+console.log(nameOfOrganization);
+</script>
+</body>
+
+</html>
