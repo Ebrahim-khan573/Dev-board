@@ -6,7 +6,7 @@ document.getElementById('discover-btn').addEventListener('click', function(){
 const completeButtons = document.querySelectorAll(".Complete-button")
 const fixBtn = document.getElementById('fix-mobile').innerText
 const historyDIv = document.getElementById('history-div')
-
+const taskAssignAmount = document.getElementById('task-assigned-amount')
 
 
 for(const completeButton of completeButtons){
@@ -20,18 +20,26 @@ for(const completeButton of completeButtons){
         const title = event.target.parentNode.parentNode.children[1].innerText
         
         alert("Board Updated Seccessfully")
+        
 
         const taskAssing = getConvertToNumber('task-assigned-amount');
+        console.log(typeof taskAssing);
+        
         document.getElementById('task-assigned-amount').innerText = taskAssing -1;
         const assignValue = getConvertToNumber('assigned-value')
         document.getElementById('assigned-value').innerText = assignValue +1;
         
+        if(taskAssignAmount.innerText === '0'){
+            alert('Congrates!!!  You have Completed all the current task')
+           }
+
         const task = document.createElement('p');
         task.innerText = `
         You have completed the task ${title} at ${hour}:${mint}:${seco}
         `
         historyDIv.appendChild(task)
   
+        
     })
     
    for(const disableButton of completeButtons){
@@ -41,10 +49,13 @@ for(const completeButton of completeButtons){
         
     });
 
+    
+
    }
+  
  
 }
 
-document.getElementById('last-btn').addEventListener('click', function(){
-    alert('Congrates!!!  You have Completed all the current task')
-})
+// document.getElementById('last-btn').addEventListener('click', function(){
+    
+// })

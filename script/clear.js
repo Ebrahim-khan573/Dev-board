@@ -14,5 +14,3 @@ function showDate(){
 }
 
 showDate()
-
-document.re
